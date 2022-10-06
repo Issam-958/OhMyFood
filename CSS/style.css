@@ -218,6 +218,11 @@ body {
   margin-right: 0.5rem;
 }
 
+.link-footer {
+  color: white;
+  text-decoration: none;
+}
+
 /* .heart-card:hover .fas {
   color: purple;
 }
