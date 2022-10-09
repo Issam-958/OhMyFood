@@ -175,7 +175,7 @@ body {
   background-color: #353535;
 }
 
-. footer .container-footer {
+.footer .container-footer {
   /* display: flex;
   flex-direction: column;
   padding: 1rem; */
@@ -311,16 +311,19 @@ body {
 
 .spinner {
   position: absolute;
-  top: 50%;
+  top: 10%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
   animation: hide-spinner 2s linear;
   visibility: hidden;
+  height: 40px;
+  width: 40px;
 }
 
 .rotate {
-  animation: rotate 1.5s linear infinite;
+  animation: rotate 2s linear infinite;
+  color: #9356dc;
 }
 
 @keyframes rotate {
@@ -335,6 +338,14 @@ main {
 }
 
 .main {
+  animation: loading 2s linear;
+}
+
+.header {
+  /* position: relative; */
+  animation: loading 2s linear;
+}
+.footer {
   animation: loading 2s linear;
 }
 

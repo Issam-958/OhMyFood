@@ -96,27 +96,33 @@ body {
 }
 
 .anim-time-4 {
-  animation-delay: 0.7s;
+  /* animation-delay: 0.7s; */
+  animation-delay: 0.1s;
 }
 
 .anim-time-5 {
-  animation-delay: 0.9s;
+  /* animation-delay: 0.9s; */
+  animation-delay: 0.3s;
 }
 
 .anim-time-6 {
-  animation-delay: 1.1s;
+  /* animation-delay: 1.1s; */
+  animation-delay: 0.5s;
 }
 
 .anim-time-7 {
-  animation-delay: 1.3s;
+  /* animation-delay: 1.3s; */
+  animation-delay: 0.1s;
 }
 
 .anim-time-8 {
-  animation-delay: 1.5s;
+  /* animation-delay: 1.5s; */
+  animation-delay: 0.3s;
 }
 
 .anim-time-9 {
-  animation-delay: 1.7s;
+  /* animation-delay: 1.7s; */
+  animation-delay: 0.5s;
 }
 
 .menu-price {
@@ -253,6 +259,11 @@ body {
 .footer-list-element i {
   width: 1.2rem;
   margin-right: 0.5rem;
+}
+
+.link-footer {
+  color: white;
+  text-decoration: none;
 }
 
 @media (min-width: 1200px) {
