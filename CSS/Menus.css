@@ -89,6 +89,8 @@ body {
   /* width: 350px; */
   animation: ani 1s;
   box-shadow: 1px 3px 10px 4px rgba(0, 0, 0, 0.1);
+  transform: scale(0);
+  animation-fill-mode: both;
 }
 
 .anim-time-1 {
