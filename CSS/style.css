@@ -324,19 +324,19 @@ body {
 }
 
 .spinner {
-  position: absolute;
-  top: 10%;
+  position: fixed;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
-  animation: hide-spinner 2s linear;
+  animation: hide-spinner 1s linear;
   visibility: hidden;
   height: 40px;
   width: 40px;
 }
 
 .rotate {
-  animation: rotate 2s linear infinite;
+  animation: rotate 1s linear infinite;
   color: #9356dc;
 }
 
