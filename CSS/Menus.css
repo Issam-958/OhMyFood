@@ -14,6 +14,12 @@ body {
   text-align: center;
 }
 
+.back-button {
+  position: absolute;
+  top: 4%;
+  font-size: 28px;
+}
+
 .Img {
   max-width: 100%;
   max-height: 32rem;
@@ -81,6 +87,7 @@ body {
   overflow: hidden;
   /* width: 350px; */
   animation: ani 1s;
+  box-shadow: 1px 3px 10px 4px rgba(0, 0, 0, 0.1);
 }
 
 .anim-time-1 {
@@ -97,7 +104,7 @@ body {
 
 .anim-time-4 {
   /* animation-delay: 0.7s; */
-  animation-delay: 0.1s;
+  animation-delay: 0.7s;
 }
 
 .anim-time-5 {
@@ -209,15 +216,18 @@ body {
   font-size: 1.1rem;
   border-radius: 100px;
   color: #fff;
-  background-color: #686868;
-  background-image: linear-gradient(
-    0deg,
-    rgba(147, 86, 220, 0.9),
-    rgba(255, 121, 218, 0.9)
-  );
+  /* background-color: #686868; */
+  background-image: linear-gradient(0deg, #9536dc, #ff79da);
+
   transition-duration: 0.25s;
   box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 25%);
   cursor: pointer;
+}
+
+.commander-button:hover {
+  opacity: 0.8;
+  /* background-color: #fff; */
+  box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 60%);
 }
 
 .footer {
@@ -281,6 +291,13 @@ body {
   .menu-element {
     overflow: hidden;
     width: 370px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .menu-element {
+    margin-left: 8px;
+    margin-right: 8px;
   }
 }
 

@@ -47,8 +47,15 @@ body {
   border-radius: 100px;
   color: #fff;
   cursor: pointer;
-  background-color: rgba(223, 73, 180, 0.9);
+  /* background-color: rgba(223, 73, 180, 0.9); */
+  background-image: linear-gradient(0deg, #9536dc, #ff79da);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.explorez-button:hover {
+  opacity: 0.8;
+
+  box-shadow: 0.25rem 0.25rem 10px rgb(0 0 0 / 60%);
 }
 
 .section-fonctionnement {
@@ -76,6 +83,11 @@ body {
 
 .list-element i {
   margin-right: 14px;
+  color: grey;
+}
+
+.list-element .font-store {
+  color: #9356dc;
 }
 
 .section-restaurants {
@@ -94,6 +106,7 @@ body {
   border-radius: 1rem;
   position: relative;
   text-decoration: none;
+  box-shadow: 1px 3px 10px 4px rgba(0, 0, 0, 0.1);
 }
 
 .image-card {
@@ -271,6 +284,7 @@ body {
 
 .heart-card:hover .fas {
   opacity: 1;
+  transition: 1.5s;
 }
 
 .heart-card:hover .far {
@@ -368,5 +382,12 @@ main {
 
   to {
     visibility: hidden;
+  }
+}
+
+@media (max-width: 290px) {
+  .explorez-button {
+    display: block;
+    padding: 8px;
   }
 }
