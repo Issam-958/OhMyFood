@@ -21,6 +21,45 @@ body {
   color: black;
 }
 
+.heart-card {
+  height: 2rem;
+  width: 2rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.heart-card i {
+  background-color: #f6f6f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.heart-card i {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.heart-card .fas {
+  color: transparent;
+  opacity: 0;
+  transition: 0.5s;
+  background: linear-gradient(#9356dc, #ff79da);
+  -webkit-background-clip: text;
+}
+
+.heart-card:hover .fas {
+  opacity: 1;
+  transition: 1s;
+}
+
 .Img {
   max-width: 100%;
   max-height: 32rem;
@@ -77,64 +116,6 @@ body {
   gap: 16px;
 }
 
-.menu-element {
-  background-color: white;
-  /* margin: 10px;
-  padding: 10px; */
-  border-radius: 20px;
-  display: flex;
-  flex-direction: row;
-  /* justify-content: space-between; */
-  overflow: hidden;
-  /* width: 350px; */
-  animation: ani 1s;
-  box-shadow: 1px 3px 10px 4px rgba(0, 0, 0, 0.1);
-  transform: scale(0);
-  animation-fill-mode: both;
-}
-
-.anim-time-1 {
-  animation-delay: 0.1s;
-}
-
-.anim-time-2 {
-  animation-delay: 0.3s;
-}
-
-.anim-time-3 {
-  animation-delay: 0.5s;
-}
-
-.anim-time-4 {
-  /* animation-delay: 0.7s; */
-  animation-delay: 0.7s;
-}
-
-.anim-time-5 {
-  /* animation-delay: 0.9s; */
-  animation-delay: 0.3s;
-}
-
-.anim-time-6 {
-  /* animation-delay: 1.1s; */
-  animation-delay: 0.5s;
-}
-
-.anim-time-7 {
-  /* animation-delay: 1.3s; */
-  animation-delay: 0.1s;
-}
-
-.anim-time-8 {
-  /* animation-delay: 1.5s; */
-  animation-delay: 0.3s;
-}
-
-.anim-time-9 {
-  /* animation-delay: 1.7s; */
-  animation-delay: 0.5s;
-}
-
 .menu-price {
   font-weight: 700;
   /* display: flex;
@@ -158,45 +139,6 @@ body {
 
 .menu-description p {
   margin: 0px;
-}
-
-.menu-animation {
-  background-color: #99e2d0;
-  margin-right: -3.5rem;
-  width: 3.5rem;
-  transition: all 1s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.menu-animation i {
-  background-color: white;
-  border-radius: 20px;
-  height: 26px;
-  width: 26px;
-  color: #99e2d0;
-  font-size: 20px;
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: rotate(0deg);
-  transition: all 1s;
-}
-
-.menu-element:hover .menu-animation i {
-  transform: rotate(360deg);
-}
-
-.elipsis {
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
-.menu-element:hover .menu-animation {
-  margin-right: 0;
 }
 
 .pb-position {
@@ -303,11 +245,108 @@ body {
   }
 }
 
+/* !!! ANIMATION APPARITION PROGRESSIVE !!! */
+
+.menu-element {
+  background-color: white;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  box-shadow: 1px 3px 10px 4px rgba(0, 0, 0, 0.1);
+  animation: ani 1s;
+  animation-fill-mode: both;
+}
+
 @keyframes ani {
   0% {
-    transform: scale(0);
+    /* transform: scale(0); */
+    opacity: 0;
+    transform: translateY(20px);
   }
   100% {
-    transform: scale(1);
+    /* transform: scale(1); */
+    opacity: 100%;
   }
+}
+
+.anim-time-1 {
+  animation-delay: 0.1s;
+}
+
+.anim-time-2 {
+  animation-delay: 0.2s;
+}
+
+.anim-time-3 {
+  animation-delay: 0.3s;
+}
+
+.anim-time-4 {
+  animation-delay: 0.4s;
+}
+
+.anim-time-5 {
+  animation-delay: 0.5s;
+}
+
+.anim-time-6 {
+  animation-delay: 0.6s;
+}
+
+.anim-time-7 {
+  animation-delay: 0.7s;
+}
+
+.anim-time-8 {
+  animation-delay: 0.8s;
+}
+
+.anim-time-9 {
+  animation-delay: 0.9s;
+}
+
+.anim-time-10 {
+  animation-delay: 1s;
+}
+
+/* !!! ANIMATION COCHE !!! */
+
+.menu-animation {
+  background-color: #99e2d0;
+  margin-right: -4.9rem;
+  width: 5rem;
+  transition: all 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-animation i {
+  background-color: white;
+  border-radius: 20px;
+  height: 26px;
+  width: 26px;
+  color: #99e2d0;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(0deg);
+  transition: all 0.5s;
+}
+
+.menu-element:hover .menu-animation i {
+  transform: rotate(360deg);
+}
+
+.elipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.menu-element:hover .menu-animation {
+  margin-right: 0;
 }
